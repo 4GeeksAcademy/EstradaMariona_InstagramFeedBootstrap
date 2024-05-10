@@ -1,24 +1,25 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-			rel="stylesheet"
-			integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-			crossorigin="anonymous"/>
-
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap instagram feed</title>
+  <script src="https://kit.fontawesome.com/f800c0d676.js" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
+
 <body>
     <nav class="navbar bg-body-tertiary" style="background-color: lightgrey;">
-        <div class="container-fluid">
+        <div class="container">
           <a class="navbar-brand" href="#">
             <img src="https://cdn-icons-png.flaticon.com/512/87/87390.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
             Instagram
           </a>
          <div class="nav justify-content-center"> 
-          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+          <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
             Create a new post
           </button>
+
           <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
             <div class="modal-dialog">
               <div class="modal-content">
@@ -27,11 +28,20 @@
                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                  ...
+                  <h6>Caption:</h6>
+                  <div class="form-floating">
+                    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                    <label for="floatingTextarea2">Add the caption of your post here</label>
+                  </div>
+                  <div class="iconos" >
+                  <i class="fa-solid fa-camera">
+                    </i>
+                  <i class="fa-solid fa-location-dot"></i>
+                </div>
                 </div>
                 <div class="modal-footer">
                   <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                  <button type="button" class="btn btn-primary">Publish</button>
+                  <button type="button"class="btn btn-success">Publish</button>
                 </div>
               </div>
             </div>
@@ -40,7 +50,7 @@
             <li class="nav-item dropdown">
               <li class="nav-item dropdown">
                 <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Dropdown button
+                  <i class="fa-solid fa-gear"></i>
                 </button>
                 <ul class="dropdown-menu">
                   <li><a class="dropdown-item" href="#">Profile</a></li>
@@ -56,52 +66,54 @@
       </nav>
       <ul class="nav nav-pills mb-3 justify-content-center" id="pills-tab" role="tablist">
         <li class="nav-item" role="presentation">
-          <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">1</button>
+          <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true"><i class="fa-solid fa-table-cells"></i></button>
         </li>
         <li class="nav-item" role="presentation">
-          <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">2</button>
+          <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false"><i class="fa-solid fa-square"></i></button>
         </li>
       </ul>
-      <div class="tab-content" id="pills-tabContent">
-        <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">...
-          <div class="container text-center">
-            <div class="row align-items-start">
+      <div class="tab-content" id="pills-tabContent" >
+        <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0" >...
+          <div class="container text-center" >
+            <div class="row align-items-start p-2" >
               <div class="col">
-                <img src="https://www.blogdelfotografo.com/wp-content/uploads/2017/09/girl-2696947_1920.jpg"  class="img-thumbnail" alt="...">
+                <img src="https://www.dzoom.org.es/wp-content/uploads/2011/08/insp-cuadradas-10.jpg"  class="img-fluid" >
               </div>
               <div class="col">
-                <img src="https://lh6.googleusercontent.com/AyLQIvjcomyduRtaQZ1ouL9aDDHD5atAM9x9ppmmj1vzQPRTmeLmNyZAEOJBsFNtef015JoKs52niyouMQUQpHTzLogF_4Y5HuCCs2Qd2pvpX1BZAfUF1pZP4FQdXD5qlaCl6RbW" class="img-thumbnail" alt="..." >
+                <img src="https://www.dzoom.org.es/wp-content/uploads/2011/08/insp-cuadradas-2.jpg" class="img-fluid">
               </div>
               <div class="col">
-                One of three columns
-              </div>
-            </div>
-            <div class="row align-items-start">
-              <div class="col">
-                One of three columns
-              </div>
-              <div class="col">
-                One of three colx
-              </div>
-              <div class="col">
-                One of three columns
+                <img src="https://www.dzoom.org.es/wp-content/uploads/2011/08/insp-cuadradas-11.jpg" class="img-fluid" >
               </div>
             </div>
-            <div class="row align-items-start">
+            <div class="row align-items-start p-2">
               <div class="col">
-                One of three columns
+                <img src="https://www.dzoom.org.es/wp-content/uploads/2011/08/insp-cuadradas-13.jpg" class="img-fluid">
               </div>
               <div class="col">
-                One of three colx
+                <img src="https://misswood.eu/cdn/shop/products/pack-fotos-cuadradas-principal.jpg?v=1674662761"  class="img-fluid">
               </div>
               <div class="col">
-                One of three columns
+                <img src="https://cdn.assets.lomography.com/ac/12a6883b9e4f0435aa3b42f68d201552696d66/1216x1216x2.jpg?auth=495549b20dbfffab482b55aa38278bd68555592d"  class="img-fluid" >
+              </div>
+            </div>
+            <div class="row align-items-start p-2">
+              <div class="col">
+                <img src="https://www.dzoom.org.es/wp-content/uploads/2011/08/insp-cuadradas-7.jpg"  class="img-fluid">
+              </div>
+              <div class="col">
+                <img src="https://misswood.eu/cdn/shop/files/fotos-cuadradas-revelado-papel-fsc.jpg?v=1674729753"  class="img-fluid">
+              </div>
+              <div class="col">
+                <img src="https://www.dzoom.org.es/wp-content/uploads/2011/08/insp-cuadradas-5.jpg"  class="img-fluid">
               </div>
             </div>
           </div>
         </div>
         <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">...</div>
       </div>
+      
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
+
 </html> 
